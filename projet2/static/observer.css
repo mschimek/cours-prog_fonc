@@ -1,0 +1,92 @@
+div.jsInterContainer {
+    padding-top: 15px;
+    pading-bottom: 15px;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+div.jsInterContent {
+    border-left: 20px solid lightBlue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+button.hideShowButton {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+div#control_div {
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    background-color: lightblue;
+    width: 600px
+}
+
+textarea.input_area {
+    rows: 4;
+    cols: 80;
+    width:500px;
+    height:70px;
+}
+
+div.msg_node {
+    margin-left: 10px;
+}
+
+span.msg {
+    padding-top:5px;
+    padding-bottom:2px;
+    color:red;
+}
+
+div#env {
+    position: fixed;
+    right : 0px;
+    top:0px;
+    width:300px;
+    height:600px;
+    overflow:auto;
+    text-align:right;
+}
+
+
+
+
+
+/* Questions */
+div.question_form {
+    padding: 5px;
+    margin: 3px;
+    background: lightBlue;
+}
+
+div.question_container {
+    padding: 5px;
+    margin: 3px;
+    border: solid 2px lightBlue;
+}
+
+div.overlay_div {
+    background: rgba(0,0,0,0.5);
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+div.question_div {
+    background: white;
+    z-index: 10;
+    margin: 20 auto;
+    padding: 10px;
+    width: 60%;
+    overflow:auto
+}

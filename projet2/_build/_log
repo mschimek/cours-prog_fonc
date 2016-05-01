@@ -1,0 +1,214 @@
+### Starting build.
+# Target: Exec/flotMaxJs.ml.depends, tags: { extension:ml, file:Exec/flotMaxJs.ml, ocaml, ocamldep, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamldep -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -modules Exec/flotMaxJs.ml > Exec/flotMaxJs.ml.depends # cached
+# Target: WebUI/console.mli.depends, tags: { extension:mli, file:WebUI/console.mli, ocaml, ocamldep, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamldep -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -modules WebUI/console.mli > WebUI/console.mli.depends # cached
+# Target: Observer/basicTypes.ml.depends, tags: { extension:ml, file:Observer/basicTypes.ml, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules Observer/basicTypes.ml > Observer/basicTypes.ml.depends # cached
+# Target: Observer/basicTypes.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Observer/basicTypes.cmo, file:Observer/basicTypes.ml, implem, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I Observer -I WebUI -I More -I DataStruct -I Control -I Exec -o Observer/basicTypes.cmo Observer/basicTypes.ml # cached
+# Target: More/moreModules.ml.depends, tags: { extension:ml, file:More/moreModules.ml, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/moreModules.ml > More/moreModules.ml.depends # cached
+# Target: More/moreModules.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:More/moreModules.cmo, file:More/moreModules.ml, implem, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/moreModules.cmo More/moreModules.ml # cached
+# Target: WebUI/question.mli.depends, tags: { extension:mli, file:WebUI/question.mli, ocaml, ocamldep, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamldep -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -modules WebUI/question.mli > WebUI/question.mli.depends # cached
+# Target: Control/parsec.mli.depends, tags: { extension:mli, file:Control/parsec.mli, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules Control/parsec.mli > Control/parsec.mli.depends # cached
+# Target: More/moreStream.mli.depends, tags: { extension:mli, file:More/moreStream.mli, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/moreStream.mli > More/moreStream.mli.depends # cached
+# Target: More/moreStream.cmi, tags: { byte, compile, extension:mli, file:More/moreStream.mli, interf, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/moreStream.cmi More/moreStream.mli # cached
+# Target: More/tree.mli.depends, tags: { extension:mli, file:More/tree.mli, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/tree.mli > More/tree.mli.depends # cached
+# Target: More/tree.cmi, tags: { byte, compile, extension:mli, file:More/tree.mli, interf, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/tree.cmi More/tree.mli # cached
+# Target: Control/parsec.cmi, tags: { byte, compile, extension:mli, file:Control/parsec.mli, interf, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I Control -I WebUI -I More -I DataStruct -I Exec -I Observer -o Control/parsec.cmi Control/parsec.mli # cached
+# Target: WebUI/question.cmi, tags: { byte, compile, extension:mli, file:WebUI/question.mli, interf, ocaml, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamlc -c -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -I WebUI -I More -I DataStruct -I Control -I Exec -I Observer -o WebUI/question.cmi WebUI/question.mli # cached
+# Target: More/state.mli.depends, tags: { extension:mli, file:More/state.mli, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/state.mli > More/state.mli.depends # cached
+# Target: More/state.cmi, tags: { byte, compile, extension:mli, file:More/state.mli, interf, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/state.cmi More/state.mli # cached
+# Target: WebUI/console.cmi, tags: { byte, compile, extension:mli, file:WebUI/console.mli, interf, ocaml, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamlc -c -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -I WebUI -I More -I DataStruct -I Control -I Exec -I Observer -o WebUI/console.cmi WebUI/console.mli # cached
+# Target: Control/control.mli.depends, tags: { extension:mli, file:Control/control.mli, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules Control/control.mli > Control/control.mli.depends # cached
+# Target: Control/control.cmi, tags: { byte, compile, extension:mli, file:Control/control.mli, interf, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I Control -I WebUI -I More -I DataStruct -I Exec -I Observer -o Control/control.cmi Control/control.mli # cached
+# Target: WebUI/editableGraph.mli.depends, tags: { extension:mli, file:WebUI/editableGraph.mli, ocaml, ocamldep, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamldep -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -modules WebUI/editableGraph.mli > WebUI/editableGraph.mli.depends # cached
+# Target: More/graph.mli.depends, tags: { extension:mli, file:More/graph.mli, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/graph.mli > More/graph.mli.depends # cached
+# Target: More/moreMap.mli.depends, tags: { extension:mli, file:More/moreMap.mli, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/moreMap.mli > More/moreMap.mli.depends # cached
+# Target: More/moreMap.cmi, tags: { byte, compile, extension:mli, file:More/moreMap.mli, interf, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/moreMap.cmi More/moreMap.mli # cached
+# Target: More/graph.cmi, tags: { byte, compile, extension:mli, file:More/graph.mli, interf, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/graph.cmi More/graph.mli # cached
+# Target: More/moreImage.mli.depends, tags: { extension:mli, file:More/moreImage.mli, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/moreImage.mli > More/moreImage.mli.depends # cached
+# Target: More/moreImage.cmi, tags: { byte, compile, extension:mli, file:More/moreImage.mli, interf, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/moreImage.cmi More/moreImage.mli # cached
+# Target: WebUI/editableGraph.cmi, tags: { byte, compile, extension:mli, file:WebUI/editableGraph.mli, interf, ocaml, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamlc -c -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -I WebUI -I More -I DataStruct -I Control -I Exec -I Observer -o WebUI/editableGraph.cmi WebUI/editableGraph.mli # cached
+# Target: DataStruct/flotMax_Computation.ml.depends, tags: { extension:ml, file:DataStruct/flotMax_Computation.ml, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules DataStruct/flotMax_Computation.ml > DataStruct/flotMax_Computation.ml.depends
+# Target: WebUI/jsContext.mli.depends, tags: { extension:mli, file:WebUI/jsContext.mli, ocaml, ocamldep, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamldep -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -modules WebUI/jsContext.mli > WebUI/jsContext.mli.depends # cached
+# Target: WebUI/jsContext.cmi, tags: { byte, compile, extension:mli, file:WebUI/jsContext.mli, interf, ocaml, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamlc -c -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -I WebUI -I More -I DataStruct -I Control -I Exec -I Observer -o WebUI/jsContext.cmi WebUI/jsContext.mli # cached
+# Target: WebUI/jsEmulation.mli.depends, tags: { extension:mli, file:WebUI/jsEmulation.mli, ocaml, ocamldep, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamldep -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -modules WebUI/jsEmulation.mli > WebUI/jsEmulation.mli.depends # cached
+# Target: Observer/emulator.mli.depends, tags: { extension:mli, file:Observer/emulator.mli, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules Observer/emulator.mli > Observer/emulator.mli.depends # cached
+# Target: Observer/emulator.cmi, tags: { byte, compile, extension:mli, file:Observer/emulator.mli, interf, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I Observer -I WebUI -I More -I DataStruct -I Control -I Exec -o Observer/emulator.cmi Observer/emulator.mli # cached
+# Target: WebUI/jsEmulation.cmi, tags: { byte, compile, extension:mli, file:WebUI/jsEmulation.mli, interf, ocaml, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamlc -c -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -I WebUI -I More -I DataStruct -I Control -I Exec -I Observer -o WebUI/jsEmulation.cmi WebUI/jsEmulation.mli # cached
+# Target: More/moreQueue.mli.depends, tags: { extension:mli, file:More/moreQueue.mli, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/moreQueue.mli > More/moreQueue.mli.depends # cached
+# Target: More/moreQueue.cmi, tags: { byte, compile, extension:mli, file:More/moreQueue.mli, interf, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/moreQueue.cmi More/moreQueue.mli # cached
+# Target: DataStruct/flotMax_Computation.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:DataStruct/flotMax_Computation.cmo, file:DataStruct/flotMax_Computation.ml, implem, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I DataStruct -I WebUI -I More -I Control -I Exec -I Observer -o DataStruct/flotMax_Computation.cmo DataStruct/flotMax_Computation.ml
+# Target: Exec/flotMaxJs.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Exec/flotMaxJs.cmo, file:Exec/flotMaxJs.ml, implem, ocaml, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamlc -c -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -I Exec -I WebUI -I More -I DataStruct -I Control -I Observer -o Exec/flotMaxJs.cmo Exec/flotMaxJs.ml # cached
+# Target: WebUI/console.ml.depends, tags: { extension:ml, file:WebUI/console.ml, ocaml, ocamldep, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamldep -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -modules WebUI/console.ml > WebUI/console.ml.depends # cached
+# Target: WebUI/imageWidget.mli.depends, tags: { extension:mli, file:WebUI/imageWidget.mli, ocaml, ocamldep, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamldep -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -modules WebUI/imageWidget.mli > WebUI/imageWidget.mli.depends # cached
+# Target: WebUI/improvedCanvas.mli.depends, tags: { extension:mli, file:WebUI/improvedCanvas.mli, ocaml, ocamldep, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamldep -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -modules WebUI/improvedCanvas.mli > WebUI/improvedCanvas.mli.depends # cached
+# Target: WebUI/improvedCanvas.cmi, tags: { byte, compile, extension:mli, file:WebUI/improvedCanvas.mli, interf, ocaml, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamlc -c -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -I WebUI -I More -I DataStruct -I Control -I Exec -I Observer -o WebUI/improvedCanvas.cmi WebUI/improvedCanvas.mli # cached
+# Target: WebUI/imageWidget.cmi, tags: { byte, compile, extension:mli, file:WebUI/imageWidget.mli, interf, ocaml, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamlc -c -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -I WebUI -I More -I DataStruct -I Control -I Exec -I Observer -o WebUI/imageWidget.cmi WebUI/imageWidget.mli # cached
+# Target: WebUI/messages.mli.depends, tags: { extension:mli, file:WebUI/messages.mli, ocaml, ocamldep, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamldep -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -modules WebUI/messages.mli > WebUI/messages.mli.depends # cached
+# Target: WebUI/messages.cmi, tags: { byte, compile, extension:mli, file:WebUI/messages.mli, interf, ocaml, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamlc -c -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -I WebUI -I More -I DataStruct -I Control -I Exec -I Observer -o WebUI/messages.cmi WebUI/messages.mli # cached
+# Target: WebUI/console.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:WebUI/console.cmo, file:WebUI/console.ml, implem, ocaml, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamlc -c -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -I WebUI -I More -I DataStruct -I Control -I Exec -I Observer -o WebUI/console.cmo WebUI/console.ml # cached
+# Target: Control/control.ml.depends, tags: { extension:ml, file:Control/control.ml, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules Control/control.ml > Control/control.ml.depends # cached
+# Target: More/moreList.mli.depends, tags: { extension:mli, file:More/moreList.mli, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/moreList.mli > More/moreList.mli.depends # cached
+# Target: More/moreList.cmi, tags: { byte, compile, extension:mli, file:More/moreList.mli, interf, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/moreList.cmi More/moreList.mli # cached
+# Target: More/moreOption.mli.depends, tags: { extension:mli, file:More/moreOption.mli, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/moreOption.mli > More/moreOption.mli.depends # cached
+# Target: More/moreOption.cmi, tags: { byte, compile, extension:mli, file:More/moreOption.mli, interf, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/moreOption.cmi More/moreOption.mli # cached
+# Target: Control/control.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Control/control.cmo, file:Control/control.ml, implem, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I Control -I WebUI -I More -I DataStruct -I Exec -I Observer -o Control/control.cmo Control/control.ml # cached
+# Target: WebUI/editableGraph.ml.depends, tags: { extension:ml, file:WebUI/editableGraph.ml, ocaml, ocamldep, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamldep -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -modules WebUI/editableGraph.ml > WebUI/editableGraph.ml.depends # cached
+# Target: More/moreGg.mli.depends, tags: { extension:mli, file:More/moreGg.mli, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/moreGg.mli > More/moreGg.mli.depends # cached
+# Target: More/moreGg.cmi, tags: { byte, compile, extension:mli, file:More/moreGg.mli, interf, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/moreGg.cmi More/moreGg.mli # cached
+# Target: More/morePerv.mli.depends, tags: { extension:mli, file:More/morePerv.mli, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/morePerv.mli > More/morePerv.mli.depends # cached
+# Target: More/morePerv.cmi, tags: { byte, compile, extension:mli, file:More/morePerv.mli, interf, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/morePerv.cmi More/morePerv.mli # cached
+# Target: WebUI/editableGraph.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:WebUI/editableGraph.cmo, file:WebUI/editableGraph.ml, implem, ocaml, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamlc -c -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -I WebUI -I More -I DataStruct -I Control -I Exec -I Observer -o WebUI/editableGraph.cmo WebUI/editableGraph.ml # cached
+# Target: More/graph.ml.depends, tags: { extension:ml, file:More/graph.ml, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/graph.ml > More/graph.ml.depends # cached
+# Target: More/binTree.mli.depends, tags: { extension:mli, file:More/binTree.mli, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/binTree.mli > More/binTree.mli.depends # cached
+# Target: More/binTree.cmi, tags: { byte, compile, extension:mli, file:More/binTree.mli, interf, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/binTree.cmi More/binTree.mli # cached
+# Target: More/floydWarshall.mli.depends, tags: { extension:mli, file:More/floydWarshall.mli, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/floydWarshall.mli > More/floydWarshall.mli.depends # cached
+# Target: More/floydWarshall.cmi, tags: { byte, compile, extension:mli, file:More/floydWarshall.mli, interf, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/floydWarshall.cmi More/floydWarshall.mli # cached
+# Target: More/graph.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:More/graph.cmo, file:More/graph.ml, implem, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/graph.cmo More/graph.ml # cached
+# Target: WebUI/jsContext.ml.depends, tags: { extension:ml, file:WebUI/jsContext.ml, ocaml, ocamldep, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamldep -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -modules WebUI/jsContext.ml > WebUI/jsContext.ml.depends # cached
+# Target: WebUI/jsContext.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:WebUI/jsContext.cmo, file:WebUI/jsContext.ml, implem, ocaml, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamlc -c -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -I WebUI -I More -I DataStruct -I Control -I Exec -I Observer -o WebUI/jsContext.cmo WebUI/jsContext.ml # cached
+# Target: WebUI/jsEmulation.ml.depends, tags: { extension:ml, file:WebUI/jsEmulation.ml, ocaml, ocamldep, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamldep -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -modules WebUI/jsEmulation.ml > WebUI/jsEmulation.ml.depends # cached
+# Target: WebUI/jsEmulation.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:WebUI/jsEmulation.cmo, file:WebUI/jsEmulation.ml, implem, ocaml, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamlc -c -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -I WebUI -I More -I DataStruct -I Control -I Exec -I Observer -o WebUI/jsEmulation.cmo WebUI/jsEmulation.ml # cached
+# Target: More/moreImage.ml.depends, tags: { extension:ml, file:More/moreImage.ml, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/moreImage.ml > More/moreImage.ml.depends # cached
+# Target: More/moreImage.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:More/moreImage.cmo, file:More/moreImage.ml, implem, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/moreImage.cmo More/moreImage.ml # cached
+# Target: More/moreStream.ml.depends, tags: { extension:ml, file:More/moreStream.ml, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/moreStream.ml > More/moreStream.ml.depends # cached
+# Target: More/moreStream.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:More/moreStream.cmo, file:More/moreStream.ml, implem, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/moreStream.cmo More/moreStream.ml # cached
+# Target: WebUI/question.ml.depends, tags: { extension:ml, file:WebUI/question.ml, ocaml, ocamldep, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamldep -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -modules WebUI/question.ml > WebUI/question.ml.depends # cached
+# Target: WebUI/question.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:WebUI/question.cmo, file:WebUI/question.ml, implem, ocaml, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamlc -c -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -I WebUI -I More -I DataStruct -I Control -I Exec -I Observer -o WebUI/question.cmo WebUI/question.ml # cached
+# Target: More/state.ml.depends, tags: { extension:ml, file:More/state.ml, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/state.ml > More/state.ml.depends # cached
+# Target: More/state.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:More/state.cmo, file:More/state.ml, implem, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/state.cmo More/state.ml # cached
+# Target: More/tree.ml.depends, tags: { extension:ml, file:More/tree.ml, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/tree.ml > More/tree.ml.depends # cached
+# Target: More/tree.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:More/tree.cmo, file:More/tree.ml, implem, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/tree.cmo More/tree.ml # cached
+# Target: WebUI/imageWidget.ml.depends, tags: { extension:ml, file:WebUI/imageWidget.ml, ocaml, ocamldep, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamldep -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -modules WebUI/imageWidget.ml > WebUI/imageWidget.ml.depends # cached
+# Target: WebUI/imageWidget.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:WebUI/imageWidget.cmo, file:WebUI/imageWidget.ml, implem, ocaml, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamlc -c -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -I WebUI -I More -I DataStruct -I Control -I Exec -I Observer -o WebUI/imageWidget.cmo WebUI/imageWidget.ml # cached
+# Target: WebUI/messages.ml.depends, tags: { extension:ml, file:WebUI/messages.ml, ocaml, ocamldep, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamldep -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -modules WebUI/messages.ml > WebUI/messages.ml.depends # cached
+# Target: WebUI/messages.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:WebUI/messages.cmo, file:WebUI/messages.ml, implem, ocaml, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamlc -c -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -I WebUI -I More -I DataStruct -I Control -I Exec -I Observer -o WebUI/messages.cmo WebUI/messages.ml # cached
+# Target: More/moreQueue.ml.depends, tags: { extension:ml, file:More/moreQueue.ml, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/moreQueue.ml > More/moreQueue.ml.depends # cached
+# Target: More/moreQueue.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:More/moreQueue.cmo, file:More/moreQueue.ml, implem, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/moreQueue.cmo More/moreQueue.ml # cached
+# Target: WebUI/improvedCanvas.ml.depends, tags: { extension:ml, file:WebUI/improvedCanvas.ml, ocaml, ocamldep, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamldep -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -modules WebUI/improvedCanvas.ml > WebUI/improvedCanvas.ml.depends # cached
+# Target: WebUI/improvedCanvas.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:WebUI/improvedCanvas.cmo, file:WebUI/improvedCanvas.ml, implem, ocaml, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+ocamlfind ocamlc -c -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc -I WebUI -I More -I DataStruct -I Control -I Exec -I Observer -o WebUI/improvedCanvas.cmo WebUI/improvedCanvas.ml # cached
+# Target: More/moreList.ml.depends, tags: { extension:ml, file:More/moreList.ml, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/moreList.ml > More/moreList.ml.depends # cached
+# Target: More/moreList.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:More/moreList.cmo, file:More/moreList.ml, implem, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/moreList.cmo More/moreList.ml # cached
+# Target: More/morePerv.ml.depends, tags: { extension:ml, file:More/morePerv.ml, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/morePerv.ml > More/morePerv.ml.depends # cached
+# Target: More/morePerv.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:More/morePerv.cmo, file:More/morePerv.ml, implem, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/morePerv.cmo More/morePerv.ml # cached
+# Target: More/moreOption.ml.depends, tags: { extension:ml, file:More/moreOption.ml, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/moreOption.ml > More/moreOption.ml.depends # cached
+# Target: More/moreOption.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:More/moreOption.cmo, file:More/moreOption.ml, implem, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/moreOption.cmo More/moreOption.ml # cached
+# Target: Control/parsec.ml.depends, tags: { extension:ml, file:Control/parsec.ml, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules Control/parsec.ml > Control/parsec.ml.depends # cached
+# Target: Control/parsec.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Control/parsec.cmo, file:Control/parsec.ml, implem, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I Control -I WebUI -I More -I DataStruct -I Exec -I Observer -o Control/parsec.cmo Control/parsec.ml # cached
+# Target: More/moreGg.ml.depends, tags: { extension:ml, file:More/moreGg.ml, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/moreGg.ml > More/moreGg.ml.depends # cached
+# Target: More/moreGg.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:More/moreGg.cmo, file:More/moreGg.ml, implem, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/moreGg.cmo More/moreGg.ml # cached
+# Target: More/binTree.ml.depends, tags: { extension:ml, file:More/binTree.ml, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/binTree.ml > More/binTree.ml.depends # cached
+# Target: More/binTree.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:More/binTree.cmo, file:More/binTree.ml, implem, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/binTree.cmo More/binTree.ml # cached
+# Target: More/floydWarshall.ml.depends, tags: { extension:ml, file:More/floydWarshall.ml, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/floydWarshall.ml > More/floydWarshall.ml.depends # cached
+# Target: More/floydWarshall.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:More/floydWarshall.cmo, file:More/floydWarshall.ml, implem, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/floydWarshall.cmo More/floydWarshall.ml # cached
+# Target: More/moreMap.ml.depends, tags: { extension:ml, file:More/moreMap.ml, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules More/moreMap.ml > More/moreMap.ml.depends # cached
+# Target: More/moreMap.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:More/moreMap.cmo, file:More/moreMap.ml, implem, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I More -I WebUI -I DataStruct -I Control -I Exec -I Observer -o More/moreMap.cmo More/moreMap.ml # cached
+# Target: Observer/emulator.ml.depends, tags: { extension:ml, file:Observer/emulator.ml, ocaml, ocamldep, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamldep -package lwt -package vg -package vg.htmlc -modules Observer/emulator.ml > Observer/emulator.ml.depends # cached
+# Target: Observer/emulator.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Observer/emulator.cmo, file:Observer/emulator.ml, implem, ocaml, package(lwt), package(vg), package(vg.htmlc), quiet, traverse }
+ocamlfind ocamlc -c -package lwt -package vg -package vg.htmlc -I Observer -I WebUI -I More -I DataStruct -I Control -I Exec -o Observer/emulator.cmo Observer/emulator.ml # cached
+# Target: Exec/flotMaxJs.byte, tags: { byte, dont_link_with, extension:byte, file:Exec/flotMaxJs.byte, link, ocaml, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), program, quiet, syntax(camlp4o), traverse }
+ocamlfind ocamlc -linkpkg -package js_of_ocaml -package js_of_ocaml.syntax -syntax camlp4o -package lwt -package vg -package vg.htmlc More/moreModules.cmo More/morePerv.cmo More/moreList.cmo More/moreOption.cmo More/moreStream.cmo More/state.cmo More/tree.cmo Control/parsec.cmo Control/control.cmo More/binTree.cmo More/moreMap.cmo More/floydWarshall.cmo More/graph.cmo More/moreImage.cmo More/moreQueue.cmo Observer/basicTypes.cmo WebUI/improvedCanvas.cmo WebUI/imageWidget.cmo WebUI/jsContext.cmo Observer/emulator.cmo WebUI/jsEmulation.cmo DataStruct/flotMax_Computation.cmo WebUI/messages.cmo WebUI/question.cmo WebUI/console.cmo More/moreGg.cmo WebUI/editableGraph.cmo Exec/flotMaxJs.cmo -o Exec/flotMaxJs.byte
+# Target: Exec/flotMaxJs.js, tags: { extension:js, file:Exec/flotMaxJs.js, js_of_ocaml, package(js_of_ocaml), package(js_of_ocaml.syntax), package(lwt), package(vg), package(vg.htmlc), quiet, syntax(camlp4o), traverse }
+js_of_ocaml --no-runtime +js_of_ocaml/runtime.js -o Exec/flotMaxJs.js Exec/flotMaxJs.byte
+# Compilation successful.

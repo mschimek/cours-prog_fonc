@@ -1,0 +1,135 @@
+
+
+
+
+
+
+module GraphValue =
+struct
+  type t = Graph.t  * (int*int) Graph.EMap.t * int * Graph.vertex 
+	     *Graph.vertex * (Graph.vertex -> Gg.p2)
+								      
+  let to_image (graph,emap,flow,source,sink,layout) =
+    MoreImage.draw_graph_flow ~layout graph emap 
+end
+  
+module DrawSolution =
+  JsContext.AddDrawable(GraphValue)
+
+module Console =
+  Console.Make
+    (JsContext)
+    (JsEmulation.Emulator)
+    (GraphValue)
+
+
+let register_algo graph edges layout ~source ~sink = 
+  if Graph.VSet.is_empty (Graph.vertices graph) then
+    Console.send_messages
+      Tree.(Node ("Empty graph", [] ))
+  else
+    let computation  = FlotMax_Computation.edmonds_karp_init 
+			~graph 
+			~edges
+			~layout
+			~source
+			~sink
+    in
+    let continutation ctxt:FlotMax_Computation.Self.t
+      = DrawSolution.show
+           ~width:120 ~height:90
+           (ctxt.graph,ctxt.edges,ctxt.flow,ctxt.source,ctxt.sink,ctxt.layout)
+        
+   in 
+    Console.register computation continutation
+      
+(*let define_graph name =
+  let question =
+    let init_graph =
+      EditableGraph.create
+        ~graph:Graph.empty
+        ~layout:Graph.VMap.empty
+    in
+    let form =
+      EditableGraph.edit_graph_form init_graph
+    in
+    Question.question_of_form
+      ~title:(string_node "Edit this graph.")
+      ~form
+  in
+  let action_on_graph editable_graph =
+    let graph = EditableGraph.get_graph editable_graph in
+    let layout = EditableGraph.get_layout editable_graph in
+    Console.add name
+      (graph,
+       (fun vertex ->
+          Graph.VMap.unsafe_find vertex layout)
+      )
+        
+  in    
+  Console.ask question action_on_graph *)
+(*
+
+let do_bfs_from_name name =
+  let open State.Infix in
+  Console.find name >>= function
+  | None ->
+    Console.send_messages
+      Tree.(Node ("Undefined graph.",[]))
+  | Some (graph,layout) ->
+    register_bfs (graph,layout)
+
+ 
+let command_bfs =
+  let open Control.Line in
+  Control.Argument.ident
+    "graph"
+    "the graph on which bfs shall be done."
+  @* do_bfs_from_name
+
+let command_define =
+  let open Control.Line in
+  Control.Argument.ident
+    "graph_name"
+    "A name for the graph that will be defined"
+  @* define_graph
+
+
+
+let all_commands =
+  let open Control.Command in 
+  empty
+  ++ register
+    ~doc:"Perform a breadth first search"
+    "bfs"
+    command_bfs
+  ++ register
+    ~doc:"Define a new graph"
+    "define"
+    command_define*)
+
+
+
+(*
+let () =
+  Console.on_submit_click
+    begin
+      let open State.Infix in
+      Console.get_input >>= fun string ->
+      let stream = MoreStream.from_string string in
+      let { Control.Command.printed;
+            Control.Command.computed } =
+        Control.Command.execute
+          all_commands
+          stream 
+      in
+      Console.send_messages printed >>
+      match computed with
+      | Some computation -> computation
+      | None -> State.return ()
+    end *)
+
+
+let () =
+  Console.start_event_loop
+    (JsContext.init_context ())

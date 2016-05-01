@@ -1,0 +1,16 @@
+S Algo
+S Control
+S DataStruct
+S Exec
+S More
+S Observer
+S WebUI
+B _build/
+B _build/Algo
+B _build/Control
+B _build/DataStruct
+B _build/Exec
+B _build/More
+B _build/Observer
+B _build/WebUI
+PKG lwt gg vg js_of_ocaml

@@ -1,0 +1,3 @@
+type my_type = 
+  | Map: int  * int
+  | Unmap: int;;

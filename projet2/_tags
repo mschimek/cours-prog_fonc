@@ -1,0 +1,19 @@
+true: package(lwt)
+
+true: package(vg), package(vg.htmlc)
+
+<WebUI>: include
+<WebUI/*>: package(js_of_ocaml), package(js_of_ocaml.syntax), syntax(camlp4o), package(lwt)
+
+
+<DataStruct>: include
+
+<More>: include
+
+<Observer>: include
+
+<Exec>: include
+<Exec/*>: package(js_of_ocaml), package(js_of_ocaml.syntax), syntax(camlp4o)
+
+
+<Control>: include
